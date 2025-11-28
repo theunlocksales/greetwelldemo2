@@ -3,19 +3,19 @@
 /* ==================== ROOT VARIABLES ==================== */
 :root {
     /* Modern Food Theme Colors - ENHANCED */
-    --primary-green: #3D5A3C;
-    --primary-gold: #C8A05E;
-    --accent-orange: #D4845F;
-    --light-cream: #FBF7F0;
+    --primary-green: #1B4D3E; /* Deep Agri Green */
+    --primary-gold: #C5E063;  /* Fresh Crop Lime */
+    --accent-orange: #E0AA3E; /* Turmeric Gold (Replaces Orange) */
+    --light-cream: #F9FAF6;   /* Brand Light Background */
     --white: #FFFFFF;
-    --dark-gray: #2A2A2A;
-    --medium-gray: #635D59;
-    --light-gray: #F5F1EB;
+    --dark-gray: #0f172a;     /* Brand Dark */
+    --medium-gray: #475569;   /* Slate Gray */
+    --light-gray: #E2E8F0;    /* Light Slate */
     
     /* Gradients - ENHANCED */
-    --gradient-primary: linear-gradient(135deg, #3D5A3C 0%, #5A8058 100%);
-    --gradient-gold: linear-gradient(135deg, #C8A05E 0%, #DDB976 100%);
-    --gradient-overlay: linear-gradient(135deg, rgba(61,90,60,0.92) 0%, rgba(90,128,88,0.85) 100%);
+    --gradient-primary: linear-gradient(135deg, #1B4D3E 0%, #3A5A40 100%);
+    --gradient-gold: linear-gradient(135deg, #E0AA3E 0%, #FCD34D 100%);
+    --gradient-overlay: linear-gradient(135deg, rgba(27, 77, 62, 0.92) 0%, rgba(15, 23, 42, 0.85) 100%);
     
     /* Shadows */
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -122,7 +122,7 @@ ul {
 .top-social a {
     width: 28px;
     height: 28px;
-    background: rgba(200, 160, 94, 0.2);
+    background: rgba(224, 170, 62, 0.2);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -131,7 +131,7 @@ ul {
 }
 
 .top-social a:hover {
-    background: var(--primary-gold);
+    background: var(--accent-orange);
     transform: translateY(-2px);
 }
 
@@ -316,8 +316,8 @@ ul {
 
     .btn-cta {
         padding: 12px 28px;
-        background: linear-gradient(135deg, #D4845F 0%, #E5A573 100%);
-        color: var(--white);
+        background: var(--gradient-gold);
+        color: var(--dark-gray);
         font-weight: 700;
         border-radius: 50px;
         transition: var(--transition-fast);
@@ -327,6 +327,7 @@ ul {
     .btn-cta:hover {
         transform: translateY(-3px);
         box-shadow: var(--shadow-lg);
+        color: var(--primary-green);
     }
 
     .mobile-toggle {
@@ -345,7 +346,7 @@ ul {
     display: flex;
     align-items: center;
     padding: 80px 0 60px;
-    background: linear-gradient(135deg, #FBF7F0 0%, #FFFBF5 100%);
+    background: linear-gradient(135deg, #F9FAF6 0%, #F3F5EF 100%);
     overflow: hidden;
 }
 
@@ -382,7 +383,7 @@ ul {
 }
 
 .gradient-text {
-    background: linear-gradient(135deg, #3D5A3C 0%, #D4845F 50%, #C8A05E 100%);
+    background: linear-gradient(135deg, #1B4D3E 0%, #E0AA3E 50%, #C5E063 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -416,7 +417,7 @@ ul {
     box-shadow: var(--shadow-md);
     text-align: center;
     transition: var(--transition-fast);
-    border: 1px solid rgba(200, 160, 94, 0.2);
+    border: 1px solid rgba(224, 170, 62, 0.2);
 }
 
 .stat-card:hover {
@@ -427,7 +428,7 @@ ul {
 .stat-icon {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #D4845F 0%, #E5A573 100%);
+    background: var(--gradient-gold);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -438,7 +439,7 @@ ul {
 .stat-icon svg {
     width: 24px;
     height: 24px;
-    color: var(--white);
+    color: var(--dark-gray);
 }
 
 .stat-card h3 {
@@ -470,8 +471,8 @@ ul {
     align-items: center;
     gap: 10px;
     padding: 15px 32px;
-    background: linear-gradient(135deg, #D4845F 0%, #E5A573 100%);
-    color: var(--white);
+    background: var(--gradient-gold);
+    color: var(--dark-gray);
     font-weight: 700;
     border-radius: 50px;
     transition: var(--transition-fast);
@@ -484,6 +485,9 @@ ul {
 .btn-primary:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-lg);
+    background: var(--white);
+    color: var(--primary-green);
+    border: 1px solid var(--primary-green);
 }
 
 .btn-secondary {
@@ -514,7 +518,7 @@ section {
 .section-tag {
     display: inline-block;
     padding: 8px 20px;
-    background: rgba(212, 132, 95, 0.15);
+    background: rgba(224, 170, 62, 0.15);
     color: var(--accent-orange);
     border-radius: 25px;
     font-size: 0.85rem;
@@ -578,7 +582,7 @@ section {
 }
 
 .belief-box {
-    background: rgba(212, 132, 95, 0.1);
+    background: rgba(224, 170, 62, 0.1);
     padding: 25px;
     border-radius: 15px;
     border-left: 4px solid var(--accent-orange);
@@ -852,7 +856,7 @@ section {
     top: 15px;
     right: 15px;
     background: var(--gradient-gold);
-    color: var(--white);
+    color: var(--dark-gray);
     padding: 8px 20px;
     border-radius: 25px;
     font-size: 0.85rem;
@@ -894,8 +898,8 @@ section {
     align-items: center;
     gap: 10px;
     padding: 12px 28px;
-    background: linear-gradient(135deg, #D4845F 0%, #E5A573 100%);
-    color: var(--white);
+    background: var(--gradient-gold);
+    color: var(--dark-gray);
     font-weight: 700;
     border-radius: 50px;
     transition: var(--transition-fast);
@@ -904,6 +908,8 @@ section {
 .btn-product:hover {
     transform: translateX(5px);
     box-shadow: var(--shadow-md);
+    background: var(--primary-green);
+    color: var(--white);
 }
 
 @media (min-width: 768px) {
@@ -945,7 +951,7 @@ section {
 .strength-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #D4845F 0%, #E5A573 100%);
+    background: var(--gradient-gold);
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -956,7 +962,7 @@ section {
 .strength-icon svg {
     width: 30px;
     height: 30px;
-    color: var(--white);
+    color: var(--dark-gray);
 }
 
 .strength-card h3 {
@@ -1092,7 +1098,7 @@ section {
 .info-icon {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #D4845F 0%, #E5A573 100%);
+    background: var(--gradient-gold);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -1103,7 +1109,7 @@ section {
 .info-icon svg {
     width: 24px;
     height: 24px;
-    color: var(--white);
+    color: var(--dark-gray);
 }
 
 .info-content h4 {
@@ -1175,8 +1181,8 @@ section {
 .btn-submit {
     width: 100%;
     padding: 16px;
-    background: linear-gradient(135deg, #D4845F 0%, #E5A573 100%);
-    color: var(--white);
+    background: var(--gradient-gold);
+    color: var(--dark-gray);
     font-weight: 700;
     font-size: 1.05rem;
     border: none;
@@ -1193,6 +1199,8 @@ section {
 .btn-submit:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-lg);
+    background: var(--primary-green);
+    color: var(--white);
 }
 
 @media (min-width: 768px) {
@@ -1247,7 +1255,7 @@ section {
 .footer-social a {
     width: 40px;
     height: 40px;
-    background: rgba(200, 160, 94, 0.2);
+    background: rgba(224, 170, 62, 0.2);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1381,8 +1389,8 @@ section {
     right: 30px;
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #D4845F 0%, #E5A573 100%);
-    color: var(--white);
+    background: var(--gradient-gold);
+    color: var(--dark-gray);
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -1404,6 +1412,8 @@ section {
 .back-to-top:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
+    background: var(--primary-green);
+    color: var(--white);
 }
 
 .back-to-top svg {
@@ -1421,7 +1431,7 @@ section {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(135deg, #D4845F, #C8A05E);
+    background: linear-gradient(135deg, #1B4D3E, #E0AA3E);
     border-radius: 5px;
 }
 
